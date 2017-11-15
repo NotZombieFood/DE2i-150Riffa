@@ -1,0 +1,148 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 07:43:48  November 14, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		DE2i-150Riffa_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE EP4CGX150DF31C7
+set_global_assignment -name TOP_LEVEL_ENTITY DE2Gen1x1If64
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:43:48  NOVEMBER 14, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name VERILOG_FILE src/txr_engine_ultrascale.v
+set_global_assignment -name VERILOG_FILE src/txr_engine_classic.v
+set_global_assignment -name VERILOG_FILE src/txc_engine_ultrascale.v
+set_global_assignment -name VERILOG_FILE src/txc_engine_classic.v
+set_global_assignment -name VERILOG_FILE src/tx_port_writer.v
+set_global_assignment -name VERILOG_FILE src/tx_port_monitor_128.v
+set_global_assignment -name VERILOG_FILE src/tx_port_monitor_64.v
+set_global_assignment -name VERILOG_FILE src/tx_port_monitor_32.v
+set_global_assignment -name VERILOG_FILE src/tx_port_channel_gate_128.v
+set_global_assignment -name VERILOG_FILE src/tx_port_channel_gate_64.v
+set_global_assignment -name VERILOG_FILE src/tx_port_channel_gate_32.v
+set_global_assignment -name VERILOG_FILE src/tx_port_buffer_128.v
+set_global_assignment -name VERILOG_FILE src/tx_port_buffer_64.v
+set_global_assignment -name VERILOG_FILE src/tx_port_buffer_32.v
+set_global_assignment -name VERILOG_FILE src/tx_port_128.v
+set_global_assignment -name VERILOG_FILE src/tx_port_64.v
+set_global_assignment -name VERILOG_FILE src/tx_port_32.v
+set_global_assignment -name VERILOG_FILE src/tx_multiplexer_128.v
+set_global_assignment -name VERILOG_FILE src/tx_multiplexer_64.v
+set_global_assignment -name VERILOG_FILE src/tx_multiplexer_32.v
+set_global_assignment -name VERILOG_FILE src/tx_multiplexer.v
+set_global_assignment -name VERILOG_FILE src/tx_hdr_fifo.v
+set_global_assignment -name VERILOG_FILE src/tx_engine_ultrascale.v
+set_global_assignment -name VERILOG_FILE src/tx_engine_selector.v
+set_global_assignment -name VERILOG_FILE src/tx_engine_classic.v
+set_global_assignment -name VERILOG_FILE src/tx_engine.v
+set_global_assignment -name VERILOG_FILE src/tx_data_shift.v
+set_global_assignment -name VERILOG_FILE src/tx_data_pipeline.v
+set_global_assignment -name VERILOG_FILE src/tx_data_fifo.v
+set_global_assignment -name VERILOG_FILE src/tx_alignment_pipeline.v
+set_global_assignment -name VERILOG_FILE src/translation_xilinx.v
+set_global_assignment -name VERILOG_FILE src/translation_altera.v
+set_global_assignment -name VERILOG_FILE src/syncff.v
+set_global_assignment -name VERILOG_FILE src/sync_fifo.v
+set_global_assignment -name VERILOG_FILE src/shiftreg.v
+set_global_assignment -name VERILOG_FILE src/sg_list_requester.v
+set_global_assignment -name VERILOG_FILE src/sg_list_reader_128.v
+set_global_assignment -name VERILOG_FILE src/sg_list_reader_64.v
+set_global_assignment -name VERILOG_FILE src/sg_list_reader_32.v
+set_global_assignment -name VERILOG_FILE src/scsdpram.v
+set_global_assignment -name VERILOG_FILE src/rxr_engine_ultrascale.v
+set_global_assignment -name VERILOG_FILE src/rxr_engine_classic.v
+set_global_assignment -name VERILOG_FILE src/rxr_engine_128.v
+set_global_assignment -name VERILOG_FILE src/rxc_engine_ultrascale.v
+set_global_assignment -name VERILOG_FILE src/rxc_engine_classic.v
+set_global_assignment -name VERILOG_FILE src/rxc_engine_128.v
+set_global_assignment -name VERILOG_FILE src/rx_port_requester_mux.v
+set_global_assignment -name VERILOG_FILE src/rx_port_reader.v
+set_global_assignment -name VERILOG_FILE src/rx_port_channel_gate.v
+set_global_assignment -name VERILOG_FILE src/rx_port_128.v
+set_global_assignment -name VERILOG_FILE src/rx_port_64.v
+set_global_assignment -name VERILOG_FILE src/rx_port_32.v
+set_global_assignment -name VERILOG_FILE src/rx_engine_ultrascale.v
+set_global_assignment -name VERILOG_FILE src/rx_engine_classic.v
+set_global_assignment -name VERILOG_FILE src/rotate.v
+set_global_assignment -name VERILOG_FILE src/riffa_wrapper_de2i.v
+set_global_assignment -name VERILOG_FILE src/riffa.v
+set_global_assignment -name VERILOG_FILE src/reset_extender.v
+set_global_assignment -name VERILOG_FILE src/reset_controller.v
+set_global_assignment -name VERILOG_FILE src/reorder_queue_output.v
+set_global_assignment -name VERILOG_FILE src/reorder_queue_input.v
+set_global_assignment -name VERILOG_FILE src/reorder_queue.v
+set_global_assignment -name VERILOG_FILE src/registers.v
+set_global_assignment -name VERILOG_FILE src/register.v
+set_global_assignment -name VERILOG_FILE src/recv_credit_flow_ctrl.v
+set_global_assignment -name VERILOG_FILE src/ram_2clk_1w_1r.v
+set_global_assignment -name VERILOG_FILE src/ram_1clk_1w_1r.v
+set_global_assignment -name VERILOG_FILE src/pipeline.v
+set_global_assignment -name VERILOG_FILE src/one_hot_mux.v
+set_global_assignment -name VERILOG_FILE src/offset_to_mask.v
+set_global_assignment -name VERILOG_FILE src/offset_flag_to_one_hot.v
+set_global_assignment -name VERILOG_FILE src/mux.v
+set_global_assignment -name VERILOG_FILE src/interrupt_controller.v
+set_global_assignment -name VERILOG_FILE src/interrupt.v
+set_global_assignment -name VERILOG_FILE src/fifo_packer_128.v
+set_global_assignment -name VERILOG_FILE src/fifo_packer_64.v
+set_global_assignment -name VERILOG_FILE src/fifo_packer_32.v
+set_global_assignment -name VERILOG_FILE src/fifo.v
+set_global_assignment -name VERILOG_FILE src/ff.v
+set_global_assignment -name VERILOG_FILE src/engine_layer.v
+set_global_assignment -name VERILOG_FILE src/demux.v
+set_global_assignment -name VERILOG_FILE src/DE2Gen1x1If64.v
+set_global_assignment -name VERILOG_FILE src/cross_domain_signal.v
+set_global_assignment -name VERILOG_FILE src/counter.v
+set_global_assignment -name VERILOG_FILE src/chnl_tester.v
+set_global_assignment -name VERILOG_FILE src/channel_128.v
+set_global_assignment -name VERILOG_FILE src/channel_64.v
+set_global_assignment -name VERILOG_FILE src/channel_32.v
+set_global_assignment -name VERILOG_FILE src/channel.v
+set_global_assignment -name VERILOG_FILE src/async_fifo_fwft.v
+set_global_assignment -name VERILOG_FILE src/async_fifo.v
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE ALTPLL50I50O125O250O.qip
+set_global_assignment -name QIP_FILE ALTGXPCIeGen1x1.qip
+set_global_assignment -name QIP_FILE PCIeGen1x1If64.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
